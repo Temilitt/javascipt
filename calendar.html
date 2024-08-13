@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        section{
+            height: 100vh;
+            background-color: pink;
+            border-radius: 20px;
+        }
+        .firstdiv{
+            width: 600px;
+            margin: auto;
+            background-color: white;
+            height: 100vh;
+            box-shadow: 0px 0px 10px 5px black;
+            border-radius: 20px;
+        }
+        .firstdiv h1{
+            padding-top: 90px;
+            text-align: center;
+           color: brown;
+           font-size: 40px;
+           display: flex;
+           flex-direction: column;
+        }
+        .minidiv{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 420px;
+            margin-top: 30px;
+            border: 2px solid gray;
+            height: 420px;
+            border-radius: 20px;
+        }
+        .semidiv{
+            font-family: cursive;
+            color: brown;
+            background-color: lightgrey;
+            margin-top: 20px;
+            border: 2px solid pink;
+            height: 30px;
+            width: 380px;
+            padding: 10px;
+            padding-left: 5px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300px;
+            text-align: center;
+        }
+        .semidiv h3{
+            /* margin-left: auto;
+            margin-right: auto; */
+            font-weight: 400px;
+            text-align: center;
+        }
+        .butdiv{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            /* margin-top: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px; */
+        }
+        .butdiv button{
+            width: 100px ;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid pink;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+        .butdiv button:hover{
+            width: 100px ;
+            height: 50px;
+            border-radius: 10px;
+            background-color: grey;
+            color: pink;
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firstdiv">
+            <h1>Months Calendar</h1>
+            <div class="minidiv">
+                <div class="semidiv">
+                    <h3 id="displayScreen">Select Month To See Number Of Days</h3>
+                    <div class="butdiv">
+                        <button type="button" onclick="initializeMonthButtons(1)">Jan</button>
+                        <button type="button" onclick="initializeMonthButtons(2)">Feb</button>
+                        <button type="button" onclick="initializeMonthButtons(3)">Mar</button>
+                        <button type="button" onclick="initializeMonthButtons(4)">Apr</button>
+                        <button type="button" onclick="initializeMonthButtons(5)">May</button>
+                        <button type="button" onclick="initializeMonthButtons(6)">Jun</button>
+                        <button type="button" onclick="initializeMonthButtons(7)">Jul</button>
+                        <button type="button" onclick="initializeMonthButtons(8)">Aug</button>
+                        <button type="button" onclick="initializeMonthButtons(9)">Sep</button>
+                        <button type="button" onclick="initializeMonthButtons(10)">Oct</button>
+                        <button type="button" onclick="initializeMonthButtons(11)">Nov</button>
+                        <button type="button" onclick="initializeMonthButtons(12)">Dec</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    let selectedMonths;
+
+function initializeMonthButtons(monthnumber) {
+    selectedMonths = monthnumber;
+
+    displaySelectedMonth()
+}
+
+function displaySelectedMonth() {
+    const displayScreen = document.getElementById('displayScreen');
+
+    switch (selectedMonths) {
+        case 1:
+            displayScreen.textContent = `January 2024 has "31 days"`;
+            break;
+        case 2:
+            displayScreen.textContent = `February 2024 has "29 days"`;
+            break;
+        case 3:
+            displayScreen.textContent = `March 2024 has "31 days"`;
+            break;
+        case 4:
+            displayScreen.textContent = `April 2024 has "30 days"`;
+            break;
+        case 5:
+            displayScreen.textContent = `May 2024 has "31 days"`;
+            break;
+        case 6:
+            displayScreen.textContent = `June 2024 has "30 days"`;
+            break;
+        case 7:
+            displayScreen.textContent = `July 2024 has "31 days"`;
+            break;
+        case 8:
+            displayScreen.textContent = `August 2024 has "31 days"`;
+            break;
+        case 9:
+            displayScreen.textContent = `September 2024 has "30 days"`;
+            break;
+        case 10:
+            displayScreen.textContent = `October 2024 has "31 days"`;
+            break;
+        case 11:
+            displayScreen.textContent = `November 2024 has "30 days"`;
+            break;
+        case 12:
+            displayScreen.textContent = `December 2024 has "31 days"`;
+            break;
+    }
+}
+
+
+function name() {
+    
+}
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+
+</script>
